@@ -1,3 +1,17 @@
+const welcomeScreen = document.getElementById("welcome");
+const enterButton = document.getElementById("enter-button");
+
+enterButton.addEventListener("click", () => {
+  welcomeScreen.classList.add(
+    "opacity-0",
+    "-translate-y-full"
+  );
+
+  setTimeout(() => {
+    welcomeScreen.classList.add("hidden");
+  }, 700);
+});
+
 const eventDate = new Date(invitationConfig.eventDate);
 
 const countdownElements = {
