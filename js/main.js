@@ -1,15 +1,54 @@
 const welcomeScreen = document.getElementById("welcome");
 const enterButton = document.getElementById("enter-button");
+const backgroundMusic = document.getElementById("background-music");
+const musicButton = document.getElementById("music-button");
 
-enterButton.addEventListener("click", () => {
+let isMusicPlaying = false;
+
+enterButton.addEventListener("click", async () => {
   welcomeScreen.classList.add(
     "opacity-0",
     "-translate-y-full"
   );
 
+  try {
+    await backgroundMusic.play();
+
+    isMusicPlaying = true;
+    musicButton.textContent = "Ⅱ";
+    musicButton.setAttribute("aria-label", "Pausar música");
+  } catch (error) {
+    console.error("No se pudo reproducir la música:", error);
+  }
+
+  musicButton.classList.remove("hidden");
+  musicButton.classList.add("flex");
+
   setTimeout(() => {
     welcomeScreen.classList.add("hidden");
   }, 700);
+});
+
+musicButton.addEventListener("click", async () => {
+  if (isMusicPlaying) {
+    backgroundMusic.pause();
+
+    isMusicPlaying = false;
+    musicButton.textContent = "♪";
+    musicButton.setAttribute("aria-label", "Reproducir música");
+
+    return;
+  }
+
+  try {
+    await backgroundMusic.play();
+
+    isMusicPlaying = true;
+    musicButton.textContent = "Ⅱ";
+    musicButton.setAttribute("aria-label", "Pausar música");
+  } catch (error) {
+    console.error("No se pudo reproducir la música:", error);
+  }
 });
 
 const eventDate = new Date(invitationConfig.eventDate);
