@@ -83,26 +83,73 @@
 </section>
 
 
-        <!-- COUNTDOWN -->
-        <section id="countdown" class="min-h-screen flex items-center
-             justify-center bg-zinc-950 px-6" aria-labelledby="countdown-title">
+        <section
+  id="countdown"
+  class="flex min-h-screen items-center justify-center bg-zinc-950 px-6 py-20"
+  aria-labelledby="countdown-title"
+>
+  <div class="w-full max-w-4xl text-center">
 
-            <div class="text-center">
+    <p class="mb-4 text-xs uppercase tracking-[0.6em] text-white/50">
+      Falta muy poco
+    </p>
 
-                <p class="mb-4 text-xs uppercase tracking-[0.5em]
-                 text-white/60">
-                    Faltan
-                </p>
+    <h2
+      id="countdown-title"
+      class="text-3xl font-light sm:text-4xl"
+    >
+      Para una noche inolvidable
+    </h2>
 
-                <h2 id="countdown-title" class="text-3xl font-light">
-                    Para celebrar juntos
-                </h2>
+    <div
+      class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4"
+      aria-label="Cuenta regresiva para el evento"
+    >
 
-                <!-- El contador lo agregamos después -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <span id="days" class="block text-4xl font-light sm:text-5xl">
+          00
+        </span>
 
-            </div>
+        <span class="mt-2 block text-xs uppercase tracking-[0.25em] text-white/50">
+          Días
+        </span>
+      </div>
 
-        </section>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <span id="hours" class="block text-4xl font-light sm:text-5xl">
+          00
+        </span>
+
+        <span class="mt-2 block text-xs uppercase tracking-[0.25em] text-white/50">
+          Horas
+        </span>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <span id="minutes" class="block text-4xl font-light sm:text-5xl">
+          00
+        </span>
+
+        <span class="mt-2 block text-xs uppercase tracking-[0.25em] text-white/50">
+          Min
+        </span>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <span id="seconds" class="block text-4xl font-light sm:text-5xl">
+          00
+        </span>
+
+        <span class="mt-2 block text-xs uppercase tracking-[0.25em] text-white/50">
+          Seg
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     </main>
 
