@@ -10,5 +10,9 @@ const invitationConfig = {
 
   gift:{
     alias:'camileiva13'
+  },
+
+  rsvp:{
+    whatsappNumber: '5493865512619'
   }
 };
