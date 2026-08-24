@@ -7,6 +7,33 @@ const venueName = document.getElementById("venue-name");
 const venueAddress = document.getElementById("venue-address");
 const mapsButton = document.getElementById("maps-button");
 
+
+const giftButton = document.getElementById("gift-button");
+const giftDetails = document.getElementById("gift-details");
+const giftAlias = document.getElementById("gift-alias");
+const copyAliasButton = document.getElementById("copy-alias");
+const copyFeedback = document.getElementById("copy-feedback");
+
+function setupGiftSection() {
+  giftAlias.textContent = invitationConfig.gift.alias;
+
+  giftButton.addEventListener("click", () => {
+    giftDetails.classList.toggle("hidden");
+  });
+
+  copyAliasButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(invitationConfig.gift.alias);
+
+      copyFeedback.textContent = "Alias copiado ✨";
+    } catch (error) {
+      copyFeedback.textContent = "No se pudo copiar el alias.";
+      console.error(error);
+    }
+  });
+}
+
+setupGiftSection();
 function setupVenue(){ 
   const { name, address, mapsUrl } = invitationConfig.venue;
 

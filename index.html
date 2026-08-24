@@ -62,12 +62,12 @@
 
         <section id="countdown" class="relative min-h-screen overflow-hidden bg-black">
 
-        
+
 
             <img src="./assets/images/866c2dd12c0dba02c83008673f718950.jpg" alt=""
                 class="absolute inset-0 h-full w-full object-cover">
 
-      
+
 
             <div class="absolute inset-0 bg-black/40"></div>
 
@@ -77,7 +77,7 @@
                flex-col items-center justify-center
                px-6 py-20 text-center">
 
-     
+
 
                 <div class="text-center">
 
@@ -227,62 +227,108 @@
 
         </section>
 
-        
+
         <!--DONDE-->
 
-<section
-  id="donde"
-  class="bg-white px-6 py-28 text-black"
->
-  <div class="mx-auto max-w-3xl text-center">
+        <section id="donde" class="bg-white px-6 py-28 text-black">
+            <div class="mx-auto max-w-3xl text-center">
 
-    <p
-      class="font-sans text-xs uppercase
-             tracking-[0.6em] text-black/40"
-    >
-      ¿Dónde?
-    </p>
+                <p class="font-sans text-xs uppercase
+             tracking-[0.6em] text-black/40">
+                    ¿Dónde?
+                </p>
 
-    <div
-      class="mx-auto my-8 h-px w-16 bg-black/20"
-    ></div>
+                <div class="mx-auto my-8 h-px w-16 bg-black/20"></div>
 
-   
 
-  
 
-<h2
-  id="venue-name"
-  class="font-display text-5xl font-light sm:text-6xl"
->
-</h2>
 
-<p
-  id="venue-address"
-  class="mx-auto mt-5 max-w-md
+
+                <h2 id="venue-name" class="font-display text-5xl font-light sm:text-6xl">
+                </h2>
+
+                <p id="venue-address" class="mx-auto mt-5 max-w-md
          font-sans text-sm leading-7
-         text-black/60"
->
-</p>
+         text-black/60">
+                </p>
 
-<a
-  id="maps-button"
-  href="#"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="mt-10 inline-flex rounded-full
+                <a id="maps-button" href="#" target="_blank" rel="noopener noreferrer" class="mt-10 inline-flex rounded-full
          bg-black px-8 py-4
          font-sans text-xs uppercase
          tracking-[0.25em] text-white
          transition duration-300
-         hover:scale-105"
->
-  Cómo llegar
-</a>
+         hover:scale-105">
+                    Cómo llegar
+                </a>
 
-  </div>
-</section>
+            </div>
+        </section>
+
         
+<!--REGALOS-->
+
+        <section id="regalos" class="bg-black px-6 py-28 text-white">
+            <div class="mx-auto max-w-2xl text-center">
+
+                <p class="font-sans text-xs uppercase
+             tracking-[0.6em] text-white/50">
+                    Regalos
+                </p>
+
+                <div class="mx-auto my-8 h-px w-16 bg-white/30"></div>
+
+                <h2 class="font-display text-4xl font-light
+             sm:text-5xl">
+                    Tu presencia es mi mejor regalo
+                </h2>
+
+                <p class="mx-auto mt-5 max-w-md
+             font-sans text-sm leading-7
+             text-white/60">
+                    Pero si deseás hacerme un presente,
+                    podés encontrar mis datos acá.
+                </p>
+
+                <button id="gift-button" type="button" class="mt-10 rounded-full
+             border border-white/40
+             px-8 py-4
+             font-sans text-xs uppercase
+             tracking-[0.25em] text-white
+             transition duration-300
+             hover:bg-white hover:text-black">
+                    Ver datos
+                </button>
+
+
+                <!-- Datos bancarios -->
+                <div id="gift-details" class="mx-auto mt-8 hidden max-w-sm">
+
+                    <p class="font-sans text-xs uppercase
+               tracking-[0.3em] text-white/50">
+                        Alias
+                    </p>
+
+
+                    <p id="gift-alias" class="mt-3 font-display text-3xl"></p>
+                    <h2>BANCO BNA</h2>
+                    <H3>Camila Leiva</H3>
+                    <button id="copy-alias" type="button" class="mt-6 font-sans text-xs uppercase
+               tracking-[0.2em] text-white/60
+               underline underline-offset-4
+               transition hover:text-white">
+                        Copiar alias
+                    </button>
+
+                    <p id="copy-feedback" class="mt-3 font-sans text-xs text-white/50" aria-live="polite"></p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--REGALOS-->
+
+
     </main>
 
 
