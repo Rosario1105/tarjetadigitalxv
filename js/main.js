@@ -3,6 +3,21 @@ const enterButton = document.getElementById("enter-button");
 const backgroundMusic = document.getElementById("background-music");
 const musicButton = document.getElementById("music-button");
 
+const venueName = document.getElementById("venue-name");
+const venueAddress = document.getElementById("venue-address");
+const mapsButton = document.getElementById("maps-button");
+
+function setupVenue(){ 
+  const { name, address, mapsUrl } = invitationConfig.venue;
+
+  venueName.textContent = name;
+  venueAddress.textContent = address;
+  mapsButton.href = mapsUrl;
+}
+
+setupVenue();
+
+
 let isMusicPlaying = false;
 
 enterButton.addEventListener("click", async () => {
