@@ -2,17 +2,33 @@ const welcomeScreen = document.getElementById("welcome");
 const enterButton = document.getElementById("enter-button");
 const backgroundMusic = document.getElementById("background-music");
 const musicButton = document.getElementById("music-button");
-
 const venueName = document.getElementById("venue-name");
 const venueAddress = document.getElementById("venue-address");
 const mapsButton = document.getElementById("maps-button");
-
-
 const giftButton = document.getElementById("gift-button");
 const giftDetails = document.getElementById("gift-details");
 const giftAlias = document.getElementById("gift-alias");
 const copyAliasButton = document.getElementById("copy-alias");
 const copyFeedback = document.getElementById("copy-feedback");
+const rsvpForm = document.getElementById("rsvp-form");
+const rsvpFeedback = document.getElementById("rsvp-feedback");
+
+rsvpForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(rsvpForm);
+
+  const guestData = {
+    name: formData.get("guestName"),
+    guestCount: formData.get("guestCount"),
+    foodRestrictions: formData.get("foodRestrictions"),
+  };
+
+  console.log(guestData);
+
+  rsvpFeedback.textContent =
+    "¡Gracias! Tu confirmación fue registrada ✨";
+});
 
 function setupGiftSection() {
   giftAlias.textContent = invitationConfig.gift.alias;

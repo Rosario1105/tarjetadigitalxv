@@ -264,8 +264,8 @@
             </div>
         </section>
 
-        
-<!--REGALOS-->
+
+    <!--REGALOS-->
 
         <section id="regalos" class="bg-black px-6 py-28 text-white">
             <div class="mx-auto max-w-2xl text-center">
@@ -326,9 +326,175 @@
             </div>
         </section>
 
-        <!--REGALOS-->
+        <!--DRESSCODE-->
+
+   
+<section
+  id="dress-code"
+  class="bg-white px-6 py-28 text-black"
+>
+  <div class="mx-auto max-w-2xl text-center">
+
+    <p
+      class="font-sans text-xs uppercase
+             tracking-[0.6em] text-black/40"
+    >
+      Dress Code
+    </p>
+
+    <div
+      class="mx-auto my-8 h-px w-16 bg-black/20"
+    ></div>
+
+    <h2
+      class="font-display text-5xl font-light
+             sm:text-6xl"
+    >
+      Elegante
+    </h2>
+
+    <p
+      class="mx-auto mt-5 max-w-md
+             font-sans text-sm leading-7
+             text-black/60"
+    >
+      Elegí tu mejor look para compartir
+      una noche muy especial.
+    </p>
+
+  </div>
+</section>
+
+<!--FORM DE ASISTENCIA-->
 
 
+<section
+  id="confirmacion"
+  class="bg-black px-6 py-28 text-white"
+>
+  <div class="mx-auto max-w-xl">
+
+    <div class="text-center">
+
+      <p
+        class="font-sans text-xs uppercase
+               tracking-[0.6em] text-white/50"
+      >
+        Confirmar asistencia
+      </p>
+
+      <div
+        class="mx-auto my-8 h-px w-16 bg-white/30"
+      ></div>
+
+      <h2
+        class="font-display text-4xl font-light
+               sm:text-5xl"
+      >
+        ¿Me acompañás?
+      </h2>
+
+      <p
+        class="mx-auto mt-5 max-w-md
+               font-sans text-sm leading-7
+               text-white/60"
+      >
+        Completá tus datos para confirmar tu asistencia.
+      </p>
+
+    </div>
+
+
+    <form
+      id="rsvp-form"
+      class="mt-12 space-y-8"
+    >
+
+      <!-- Nombre -->
+
+      <div>
+        <label
+          for="guest-name"
+          class="font-sans text-xs uppercase
+                 tracking-[0.25em] text-white/50"
+        >
+          Nombre y apellido
+        </label>
+
+        <input
+          id="guest-name"
+          name="guestName"
+          type="text"
+          required
+          autocomplete="name"
+          class="mt-3 w-full border-b
+                 border-white/30 bg-transparent
+                 py-3 font-sans text-white
+                 outline-none transition
+                 focus:border-white"
+        >
+      </div>
+
+
+ 
+
+
+      <!-- Alimentación -->
+
+      <div>
+        <label
+          for="food-restrictions"
+          class="font-sans text-xs uppercase
+                 tracking-[0.25em] text-white/50"
+        >
+          Restricciones alimentarias
+        </label>
+
+        <textarea
+          id="food-restrictions"
+          name="foodRestrictions"
+          rows="3"
+          placeholder="Ej: vegetariano, celíaco..."
+          class="mt-3 w-full resize-none
+                 border-b border-white/30
+                 bg-transparent py-3
+                 font-sans text-white
+                 placeholder:text-white/30
+                 outline-none transition
+                 focus:border-white"
+        ></textarea>
+      </div>
+
+
+      <!-- Botón -->
+
+      <div class="pt-4 text-center">
+
+        <button
+          type="submit"
+          class="rounded-full bg-white
+                 px-9 py-4
+                 font-sans text-xs uppercase
+                 tracking-[0.25em] text-black
+                 transition duration-300
+                 hover:scale-105"
+        >
+          Confirmar
+        </button>
+
+      </div>
+
+      <p
+        id="rsvp-feedback"
+        class="text-center font-sans
+               text-sm text-white/60"
+        aria-live="polite"
+      ></p>
+
+    </form>
+
+  </div>
+</section>
     </main>
 
 
